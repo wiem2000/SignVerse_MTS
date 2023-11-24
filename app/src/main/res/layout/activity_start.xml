@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/logo" />
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="413dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="208dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/btnConvertToSign"
+        android:layout_width="171dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#673AB7"
+        android:drawableLeft="@drawable/ic_sign_language"
+        android:text="Convert to Sign"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMakeCall"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnConvertToVoice"
+        android:layout_width="171dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="16dp"
+        android:background="#673AB7"
+        android:drawableLeft="@drawable/ic_voice_conversion"
+        android:text="Convert to Voice"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartChat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartChat"
+        android:layout_width="171dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="36dp"
+        android:background="#673AB7"
+        android:drawableLeft="@drawable/ic_chat"
+        android:text="Start Chat"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnMakeCall"
+        android:layout_width="171dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:background="#673AB7"
+        android:drawableLeft="@drawable/ic_phone_call"
+        android:text="Make Call"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="174dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="143dp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+</android.support.constraint.ConstraintLayout>
